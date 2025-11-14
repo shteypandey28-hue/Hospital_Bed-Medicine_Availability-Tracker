@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     fetchAllData();
-    const interval = setInterval(fetchAllData, 30000); // Refresh every 30 seconds
+    const interval = setInterval(fetchAllData, 120000); // Refresh every 2 minutes (120000ms)
     return () => clearInterval(interval);
   }, [selectedCity]);
 

@@ -1,0 +1,52 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #64b5f6;
+}
+
+.city-filter {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.city-filter label {
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.city-filter select {
+  padding: 8px 16px;
+  background: #1e2742;
+  border: 1px solid #2d3a5a;
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.city-filter select:hover {
+  border-color: #64b5f6;
+  background: #252d47;
+}
+
+.city-filter select:focus {
+  outline: none;
+  border-color: #64b5f6;
+  box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.2);
+}
+

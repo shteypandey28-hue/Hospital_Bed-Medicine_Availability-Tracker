@@ -1,0 +1,137 @@
+.section {
+  margin: 30px 0;
+}
+
+.no-data {
+  text-align: center;
+  color: #90a4ae;
+  padding: 40px;
+  font-size: 16px;
+}
+
+.hospitals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.hospital-card {
+  background: linear-gradient(135deg, #1e2742 0%, #252d47 100%);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #2d3a5a;
+}
+
+.hospital-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-color: #64b5f6;
+}
+
+.hospital-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2d3a5a;
+}
+
+.hospital-header h3 {
+  color: #64b5f6;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.city-badge {
+  background: #2d3a5a;
+  color: #b0bec5;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.hospital-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: #b0bec5;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.detail-value {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.detail-value span:first-child {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.detail-total {
+  font-size: 14px;
+  color: #90a4ae;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1a1f3a;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.oxygen-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #2d3a5a;
+}
+
+.oxygen-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oxygen-badge.available {
+  background: rgba(129, 199, 132, 0.2);
+  color: #81c784;
+}
+
+.oxygen-badge.unavailable {
+  background: rgba(229, 115, 115, 0.2);
+  color: #e57373;
+}
+
+@media (max-width: 768px) {
+  .hospitals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

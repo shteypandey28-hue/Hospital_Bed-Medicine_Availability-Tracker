@@ -16,7 +16,7 @@ Essential Medicines: Stock levels, shortages, and critical alerts
 The system integrates with OpenFDA Drug API to fetch real-time drug shortage data and adverse event information, providing accurate and up-to-date medicine availability tracking.
 Features
 
-Hospital Tracking
+Hospital Tracking.
 
 Real-time Bed Availability: Monitor available beds vs. total capacity
 ICU Monitoring: Track ICU bed availability and occupancy rates
